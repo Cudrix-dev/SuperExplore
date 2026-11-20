@@ -1,6 +1,6 @@
 [package]
 name = "superexplore"
-version = "0.1.0"
+version = "0.1.1"
 description = "Fast NTFS file search for Windows"
 authors = ["Cudrix"]
 edition = "2021"
