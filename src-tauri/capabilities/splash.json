@@ -1,0 +1,5 @@
+{
+  "identifier": "splash",
+  "windows": ["splash"],
+  "permissions": ["allow-app-status", "allow-show-splash", "allow-finish-startup"]
+}

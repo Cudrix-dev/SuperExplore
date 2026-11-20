@@ -1,0 +1,13 @@
+{
+  "identifier": "desktop",
+  "windows": ["main"],
+  "permissions": [
+    "core:window:allow-start-dragging",
+    "allow-app-status",
+    "allow-search-files",
+    "allow-hide-main",
+    "allow-minimize-main",
+    "allow-open-result",
+    "allow-copy-path"
+  ]
+}

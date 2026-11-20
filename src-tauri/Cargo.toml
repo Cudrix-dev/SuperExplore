@@ -1,0 +1,40 @@
+[package]
+name = "superexplore"
+version = "0.1.0"
+description = "Fast NTFS file search for Windows"
+authors = ["Cudrix"]
+edition = "2021"
+
+[[bin]]
+name = "superexplore"
+path = "src/main.rs"
+test = false
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+hashbrown = { version = "0.17", features = ["rayon"] }
+rayon = "1.10"
+rustc-hash = "2"
+serde = { version = "1", features = ["derive"] }
+tauri = { version = "2", features = ["tray-icon"] }
+tauri-plugin-clipboard-manager = "2"
+tauri-plugin-global-shortcut = "2"
+tokio = { version = "1", features = ["rt", "sync"] }
+window-vibrancy = "0.8"
+windows = { version = "0.62", features = [
+    "Win32_Foundation",
+    "Win32_Graphics_Dwm",
+    "Win32_Security",
+    "Win32_Storage_FileSystem",
+    "Win32_System_Com",
+    "Win32_System_Com_StructuredStorage",
+    "Win32_System_IO",
+    "Win32_System_Ioctl",
+    "Win32_System_Ole",
+    "Win32_System_Variant",
+    "Win32_UI_Controls",
+    "Win32_UI_Shell",
+    "Win32_UI_WindowsAndMessaging",
+] }
